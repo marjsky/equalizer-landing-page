@@ -1,35 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Equalizer landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  testing
-  
-  We make your music sound extraordinary.
+    <title>Frontend Mentor | Equalizer landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            mobile: "375px",
+            tablet: "768px",
+            desktop: "1440px",
+          },
+          fontFamily: {
+            ibm: ["IBM+Plex+Sans"],
+          },
+          extend: {
+            colors: {
+              teal: "#66E2DC",
+              orange: "#FA7453",
+              yellow: "#FFB964",
+              white: "#FCFAF9",
+              dark: "#191826",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-ibm">
+    <div class="inline-block relative">
+      <img
+        src="./assets/bg-main-mobile.png"
+        alt="hero"
+        class="absolute top-[-104px] left-[160px] w-[281px] h-[480px]"
+      />
+      <img
+        src="./assets/logo.svg"
+        alt="logo"
+        class="block w-146px h-32px pl-[24px] pt-[40px]"
+      />
+      <h1
+        class="font-bold text-[40px] leading-[48px] tracking-[-0.45px] px-[24px] pt-[64px]"
+      >
+        We make your music sound extraordinary.
+      </h1>
+      <p class="pt-[20px] px-[24px] pb-[68px] leading-[26px]">
+        A system audio equalizer specifically <br />
+        designed for Android and iOS. Freely tune the way your music sounds with
+        a professional grade parametric EQ & volume mixer. Control bass, mids,
+        treble, gain control, reverb, and more!
+      </p>
+    </div>
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+    <div class="inline-block relative">
+      <div>
+        <img
+          src="./assets/illustration-app.png"
+          alt="illustration"
+          class="w-[209px] h-[430px] m-auto"
+        />
+      </div>
+      <div class="bg-dark rounded-[12px] absolute top-[98px] -z-10 w-full">
+        <img
+          src="./assets/bg-pattern-2.svg"
+          alt="bg"
+          class="w-[280px] h-[420px] m-auto"
+        />
+      </div>
+      <div class="bg-orange rounded-[12px] mt-[48px] py-[48px] px-[36px] text-white">
+        <h1 class="font-bold text-[32px]">Premium EQ</h1>
+        <p class="pt-[12px] text-[18px]">
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level
+          and access all our incredible features!
+        </p>
+        <div class="flex items-center pt-[36px]">
+          <p class="text-[65px] font-bold">$4</p>
+          <p class="pl-[16px] text-[20px]">/ month</p>
+        </div>
+        <div class="flex flex-col pt-[32px] ">
+          <button class="bg-dark py-[15px] rounded-[12px] mb-[16px]">iOS Download</button>
+          <button class="text-dark bg-white py-[15px] rounded-[12px]">Android Download</button>
+        </div>
+      </div>
+    </div>
+    <div>
 
-  Premium EQ
+    </div>
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
-
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
-
-</body>
+    All rights reserved © Equalizer 2021 Have any problems? Contact us via
+    social media or email us at equalizer@example.com
+  </body>
 </html>
